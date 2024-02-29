@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IndustriasStark.Views.PageSobre" Title="Creditos do Projeto">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label Text="Informações do Programa" FontAttributes="Bold" FontSize="Large" />
+                <StackLayout>
+                    <Label Text="Programa: Industria" />
+                    <Label Text="Versão: 1.0" />
+                    <Label Text="Leonardo Gomes Ferreira" />
+                    <Label Text="Data de Criação: 22/02/2024" />
+                </StackLayout>
+
+                <Label Text="Direitos Autorais" FontAttributes="Bold" FontSize="Large" />
+                <StackLayout>
+                    <Label Text="Copyright © 2024 Leonardo Gomes" />
+                    <Label Text="Todos os direitos reservados." />
+                    <Label Text="Este programa é distribuído sob a licença MIT." />
+                    <Label Text="Consulte o arquivo de licença para obter detalhes." />
+                </StackLayout>
+
+                <Label Text="Bibliotecas de Terceiros" FontAttributes="Bold" FontSize="Large" />
+                <Label Text="Este programa utiliza as seguintes bibliotecas de terceiros:" />
+                <StackLayout>
+                    <Label Text="- Xamarin.Forms" />
+                    <Label Text="- Newtonsoft.Json" />
+                </StackLayout>
+
+                <Label Text="Agradecimentos Especiais" FontAttributes="Bold" FontSize="Large" />
+                <Label Text="Agradecimentos especiais ao Willian Mazotte pela assistência no design de interface." />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    

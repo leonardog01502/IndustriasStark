@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="IndustriasStark.Views.PagePrincipal"
+                  IsPresented="True">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Margin="10">
+                <StackLayout>
+                    <Image Source="HomePrincipal" HorizontalOptions="Center" HeightRequest="250" WidthRequest="250"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Home" HeightRequest="50" WidthRequest="50"/>
+                    <Button x:Name="btnHome" Text="HOME" HorizontalOptions="FillAndExpand" CornerRadius="10" Clicked="btnHome_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Cadastrar2" HeightRequest="50" WidthRequest="50"/>
+                    <Button x:Name="btnCadastrar" Text="CADASTRAR" HorizontalOptions="FillAndExpand" CornerRadius="10" Clicked="btnCadastrar_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Localizar2" HeightRequest="50" WidthRequest="50"/>
+                    <Button x:Name="btnLocalizar" Text="LOCALIZAR" HorizontalOptions="FillAndExpand" CornerRadius="10" Clicked="btnLocalizar_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Info" HeightRequest="50" WidthRequest="50"/>
+                    <Button x:Name="btnSobre" Text="SOBRE" HorizontalOptions="FillAndExpand" CornerRadius="10" Clicked="btnSobre_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="Seja Bem - Vindos a todos as Industrias Stark">
+                    <Label x:Name="testeDb" Text="Seja Bem - Vindos a todos as Industrias Stark"/>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

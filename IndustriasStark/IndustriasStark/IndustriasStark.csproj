@@ -1,0 +1,156 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\ce2rhsnc.phx~" />
+    <None Remove="Views\PageHome.xaml~RFb0716f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="24.2.8" />
+    <PackageReference Include="System.Xml.ReaderWriter" Version="4.3.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2622" />
+    <PackageReference Include="Xamarin.Forms.AnimationsPack" Version="1.0.1" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="4.1.6" />
+    <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\PageCadastrar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PageHome.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PageListar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PagePrincipal.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PageSobre.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\BusinessCard.Names.en.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\BusinessCard.Titles.en.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\US_Cities.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.Cmc7.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.Mrz.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.Micr.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.Field.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.es.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.es.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.it.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.it.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.fr.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.fr.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.de.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.de.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.en.dic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.en.bin2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.en.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p1.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p2.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p3.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p4.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p5.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p6.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p7.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.icr.en.p8.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Aluno\.nuget\packages\leadtools.ocr.languages.main.net\22.0.0.8\build\netstandard2.0\..\..\content\OcrLEADRuntime\LEAD.Binarize.bin" />
+  </ItemGroup>
+</Project>

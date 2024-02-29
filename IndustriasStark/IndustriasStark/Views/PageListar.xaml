@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IndustriasStark.Views.PageListar" Title="Listagem dos Funcionários">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Exibir Funcionários Especiais:" FontSize="Medium"/>
+                <Switch x:Name="swFavorito" HorizontalOptions="Start" Toggled="swFavorito_Toggled"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="txtCPF" Keyboard="Numeric" Placeholder="CPF do Funcionário" TextChanged="txtCPF_TextChanged"  HorizontalOptions="StartAndExpand"/>
+                <Button x:Name="btnLocalizar" Text="Localizar" Clicked="btnLocalizar_Clicked"/>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <ListView x:Name="ListaFuncionarios" HasUnevenRows="True" SeparatorColor="Red" Margin="15" ItemSelected="ListaFuncionarios_ItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Label Text="{Binding Id, StringFormat='Código: {0'}"/>
+                                        <Label Text="{Binding Nome, StringFormat='Nome: {0'}"/>
+                                        <Image x:Name="imgFoto" Source="{Binding Foto}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

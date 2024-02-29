@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IndustriasStark.Views.PageCadastrar" Title="Cadastrar Funcionários"
+             xmlns:controls="clr-namespace:IndustriasStark.Views">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry x:Name="txtCodigo" IsVisible="False" IsEnabled="False"/>
+                <Entry x:Name="txtNome" Placeholder="Nome do Funcionário" />
+                <Entry x:Name="txtCPF" Placeholder="CPF do funcionário" Keyboard="Numeric" TextChanged="txtCPF_TextChanged"/>
+                <Entry x:Name="txtTelefone" Placeholder="Telefone do funcionário" Keyboard="Numeric" TextChanged="txtTelefone_TextChanged"/>
+                <Entry x:Name="txtEndereco" Placeholder="Endereço do funcionário" />
+                <Entry x:Name="txtBairro" Placeholder="Bairro do funcionário" />
+                <Entry x:Name="txtComplemento" Placeholder="Casa, Apartamento etc..."/>
+                <Entry x:Name="txtEmail" Placeholder="E-mail do funcionário" Keyboard="Email" />
+                <Picker x:Name="pkrSetor" Title="Setor">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Setor Alimentício</x:String>
+                            <x:String>Setor Químico</x:String>
+                            <x:String>Setor Petroquímico</x:String>
+                            <x:String>Setor Construção Civil</x:String>
+                            <x:String>Setor Metalúrgico</x:String>
+                            <x:String>Setor Energia</x:String>
+                            <x:String>Setor Eletrônico</x:String>
+                            <x:String>Setor Aeronáutico e Aeroespacial</x:String>
+                            <x:String>Setor Farmacêutico</x:String>
+                            <x:String>Setor Papel e Celulose</x:String>
+                            <x:String>Setor Plásticos e Polímeros</x:String>
+                            <x:String>Setor Tecnologia da Informação e Comunicação (TIC)</x:String>
+                            <x:String>Setor Indústria Automotiva</x:String>
+                            <x:String>Setor Têxtil e Vestuário</x:String>
+                            <x:String>Setor Siderúrgico</x:String>
+                            <x:String>Setor Mineração</x:String>
+                            <x:String>Setor Químico-Farmacêutico</x:String>
+                            <x:String>Setor Engenharia e Consultoria</x:String>
+                            <x:String>Setor Logística e Transporte</x:String>
+                            <x:String>Setor Agroindústria</x:String>
+                            <x:String>Setor Reciclagem e Sustentabilidade</x:String>
+                            <x:String>Setor Automatização e Robótica</x:String>
+                            <x:String>Setor Indústria Naval</x:String>
+                            <x:String>Setor Máquinas e Equipamentos</x:String>
+                            <x:String>Setor Energia Renovável</x:String>
+                            <x:String>Setor de Moda</x:String>
+                            <x:String>Setor de Cosméticos</x:String>
+                            <x:String>Setor de Suprimentos Médicos</x:String>
+                            <x:String>Setor de Bebidas</x:String>
+                            <x:String>Setor de Biotecnologia</x:String>
+                            <x:String>Setor de Serviços Financeiros</x:String>
+                            <x:String>Setor de Alimentos e Bebidas</x:String>
+                            <x:String>Setor de Entretenimento</x:String>
+                            <x:String>Setor de Tecnologia</x:String>
+                            <x:String>Setor de Construção</x:String>
+                            <x:String>Setor de Transportes</x:String>
+                            <x:String>Setor de Consultoria</x:String>
+                            <x:String>Setor de Educação</x:String>
+                            <x:String>Setor de Saúde</x:String>
+                            <x:String>Setor de Varejo</x:String>
+                            <x:String>Setor de Seguros</x:String>
+                            <x:String>Setor de Imobiliária</x:String>
+                            <x:String>Setor de Indústria</x:String>
+                            <x:String>Setor de Agricultura</x:String>
+                            <x:String>Setor de Pesca</x:String>
+                            <x:String>Setor de Bens de Consumo</x:String>
+                            <x:String>Setor de Comunicação</x:String>
+                            <x:String>Setor de Comércio Exterior</x:String>
+                            <x:String>Setor de Contrução</x:String>
+                            <x:String>Setor de Cosméticos</x:String>
+                            <x:String>Setor de Educação</x:String>
+                            <x:String>Setor de Energia</x:String>
+                            <x:String>Setor de Engenharia</x:String>
+                            <x:String>Setor de Entretenimento</x:String>
+                            <x:String>Setor de Esportes</x:String>
+                            <x:String>Setor de Farmacêutico</x:String>
+                            <x:String>Setor de Finanças</x:String>
+                            <x:String>Setor de Hardware</x:String>
+                            <x:String>Setor de Imobiliário</x:String>
+                            <x:String>Setor de Indústria</x:String>
+                            <x:String>Setor de Jornalismo</x:String>
+                            <x:String>Setor de Lazer</x:String>
+                            <x:String>Setor de Logística</x:String>
+                            <x:String>Setor de Manufatura</x:String>
+                            <x:String>Setor de Materiais</x:String>
+                            <x:String>Setor de Mídia</x:String>
+                            <x:String>Setor de Mineração</x:String>
+                            <x:String>Setor de Negócios</x:String>
+                            <x:String>Setor de Papel e Celulose</x:String>
+                            <x:String>Setor de Pesquisa</x:String>
+                            <x:String>Setor de Petróleo e Gás</x:String>
+                            <x:String>Setor de Produtos Químicos</x:String>
+                            <x:String>Setor de Publicidade</x:String>
+                            <x:String>Setor de Químicos</x:String>
+                            <x:String>Setor de Recursos Humanos</x:String>
+                            <x:String>Setor de Relações Públicas</x:String>
+                            <x:String>Setor de Robótica</x:String>
+                            <x:String>Setor de Saúde</x:String>
+                            <x:String>Setor de Segurança</x:String>
+                            <x:String>Setor de Serviços</x:String>
+                            <x:String>Setor de Software</x:String>
+                            <x:String>Setor de Tecnologia</x:String>
+                            <x:String>Setor de Telecomunicações</x:String>
+                            <x:String>Setor de Transporte</x:String>
+                            <x:String>Setor de Turismo</x:String>
+                            <x:String>Setor de Varejo</x:String>
+                            <x:String>Setor de Vestuário</x:String>
+                            <x:String>Setor de Viagens</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker x:Name="pkrTurno" Title="Turno">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Manhã</x:String>
+                            <x:String>Tarde</x:String>
+                            <x:String>Noite</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Editor x:Name="txtDados" Placeholder="Dados do Funcionário" VerticalOptions="FillAndExpand" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Funcionário Especial:" FontSize="Medium"/>
+                    <Switch x:Name="swFavorito" HorizontalOptions="Start"/>
+                </StackLayout>
+                <Image x:Name="imgFoto" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFit" />
+                <Button x:Name="btnTirarFoto" Text="Tirar Foto" Clicked="btnTirarFoto_Clicked" HorizontalOptions="Center" VerticalOptions="Center" />
+                <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                    <Button x:Name="btnSalvar" Text="Inserir" HorizontalOptions="FillAndExpand" Clicked="btnSalvar_Clicked"/>
+                    <Button x:Name="btnExcluir" Text="Excluir" HorizontalOptions="FillAndExpand" IsVisible="False" Clicked="btnExcluir_Clicked"/>
+                    <Button x:Name="btnCancelar" Text="Cancelar" HorizontalOptions="FillAndExpand" Clicked="btnExcluir_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
